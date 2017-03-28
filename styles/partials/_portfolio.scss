@@ -1,0 +1,209 @@
+
+.portfolio-work{
+border:1px solid transparent;
+
+		padding:.2em;
+	
+}
+
+.wrapper-three {
+	width:100%;
+	text-align:center;
+	margin:0;
+	padding:0;
+	
+
+}
+
+.port-text {
+
+
+h2 {
+
+	font-size:2.8rem;
+}
+h2:before {
+	content:"	—";
+
+
+	
+	}
+
+	p {
+		font-size:1.8rem;
+		width:60%;
+		
+		margin:0 auto;
+	}
+}
+
+.port-links {
+	font-size:1em;
+	display:inline-flex;
+	flex-direction:row;
+
+ul {
+	padding:0;
+	margin:0;
+}
+	li {
+		list-style:none;
+		display:inline-block;
+		padding:5px;
+		text-transform:uppercase;
+	}
+	h4{
+		font-family:$jose;
+	color: $midnite;
+	font-size: 1rem;/* Approximation due to font substitution */
+	line-height:1.7;
+	text-transform: uppercase;
+	}
+	a {
+		text-decoration:none;
+		color:$midnite;
+		border:2px solid $pastelPink;
+		padding:.8em;
+	}
+	
+		strong::after {
+content:"	—";
+color:white;
+
+	padding:5px;
+	margin:0;
+	display: block;
+	line-height:0;
+	}
+}
+.port-photos {
+	display:flex;
+	margin:2px;
+	padding:5px;
+	flex-direction:row;
+	flex-wrap:wrap;
+	
+
+	
+}
+.port-one, .port-two, .port-three, .port-four ,.port-five {
+	width:48.6%;
+	border:1px solid transparent;
+	margin:.09em;
+	padding:.2em;
+	 display: flex;
+   flex-direction: column;
+
+
+	
+	
+}
+.port-code {
+	a {
+		border:none;
+
+	}
+	.description {
+		width:50%;
+	}
+		.arrow {
+			max-height:45px;
+			max-width:45px;
+		
+	}
+}
+
+.port-one {
+
+img {
+	height:auto;
+	width:auto;
+	max-height:400px;
+	max-width:600px;
+}
+
+
+}
+.port-two {
+img {
+		height:auto;
+	width:auto;
+	max-height:400px;
+	max-width:600px;
+}
+
+}
+.port-three {
+	img {
+	height:auto;
+	width:auto;
+	max-height:400px;
+	max-width:600px;
+	}
+}
+.port-four {
+img {
+		height:auto;
+	width:auto;
+	max-height:400px;
+	max-width:600px;
+}
+}
+
+.port-code {
+	
+padding-bottom:.4em;
+padding-left:.8em;
+margin-bottom:.2em;
+text-align:left;
+	 
+	 background-color: rgba(18, 18, 18, 0.85);
+h4 {
+	font-family:$jose;
+	color: white;
+	font-size: 1rem;/* Approximation due to font substitution */
+	line-height:1.0rem;
+	text-transform: uppercase;
+
+	}
+
+	a{
+		text-decoration:none;
+		color:white;
+		border:2px solid $pastelPink;
+		padding:.8em;
+	}
+	
+	strong::after {
+
+color:white;
+
+	padding:.7rem;
+	margin:0;
+	
+	line-height:0;
+	}
+
+	.description{
+		font-family:$crim;
+		color: #ababab;
+text-transform:lowercase;
+font-size: .9rem; /* Approximation due to font substitution */
+line-height: .07em; /* Approximation due to font substitution */
+padding-bottom:1em;
+text-align: left;
+	}
+	.arrow {
+
+	
+	height: auto;
+	width:auto;
+	max-height:20px;
+	max-width:20px;
+}
+	}
+
+
+
+
+
