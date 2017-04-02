@@ -116,9 +116,7 @@ a:hover {
 
 		font-size: 2.8rem;
 	}
-	h2:after {
-		content: "	—";
-	}
+	
 }
 .wrapper-four {
 	width: 85%;
@@ -271,11 +269,15 @@ svg {
 	width: auto;
 	fill:$midnite;
 	text-align:center;
-	max-height: 2.9em;
-	max-width: 2.9em;
+	max-height: 2.2em;
+	max-width: 2.2em;
 	fill: $pastelPink;
+	border:1px solid transparent;
+	border-radius:50%;
 
-	filter: contrast(96%);
+
+
+	filter: contrast(98%);
 }
 .svg-box {
 	text-align: center;
@@ -285,9 +287,7 @@ svg {
 	list-style: none;
 	margin: 0 auto;
 	
-	span {
-		padding: .2em;
-	}
+	
 }
 .overlay-box {
 	
@@ -386,6 +386,7 @@ i {
 	font-size:2em;
 }
 }
+
 .social-media::before {
         content: '';
         position: absolute;

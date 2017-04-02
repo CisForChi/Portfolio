@@ -337,19 +337,23 @@ h3::after {
 
 .box-box1 {
   padding: 2.8em 5.2em;
-  width: 50%; }
+  width: 50%;
+  height: 100vh; }
   .box-box1 p {
-    font-size: 1.8em;
-    line-height: 1.4;
+    font-size: 1.5em;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    line-height: 1.2;
     width: 100%;
+    font-family: "Crimson Text", serif;
     margin: 0 auto;
-    text-align: center; }
+    text-align: left; }
   .box-box1 em {
     border-bottom: 2px solid #F2DCDC; }
 
 .box-box2 {
   background: url("/assets/me.JPG");
-  opacity: .3;
+  opacity: .6;
   z-index: 1;
   width: 56.5%;
   background-attachment: fixed;
@@ -360,9 +364,36 @@ h3::after {
     display: none; }
 
 .box-svg {
-  padding: 4em;
-  margin: 0 auto;
-  width: 100%; }
+  width: 100%;
+  text-align: left; }
+
+.box-svg:before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  height: 20px;
+  width: 20px;
+  border-top: 5px solid #262626;
+  border-left: 5px solid #262626; }
+
+.box-svg:after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  height: 20px;
+  width: 20px;
+  border-bottom: 5px solid #262626;
+  border-right: 5px solid #262626; }
+
+.box-contain {
+  position: relative;
+  padding-top: 1rem;
+  width: 100%;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  border-radius: 2%; }
 
 .video-container {
   position: absolute;
@@ -586,8 +617,6 @@ a:hover {
   text-align: center; }
   .blog-posts h2 {
     font-size: 2.8rem; }
-  .blog-posts h2:after {
-    content: "	—"; }
 
 .wrapper-four {
   width: 85%;
@@ -713,10 +742,12 @@ svg {
   width: auto;
   fill: #262626;
   text-align: center;
-  max-height: 2.9em;
-  max-width: 2.9em;
+  max-height: 2.2em;
+  max-width: 2.2em;
   fill: #F2DCDC;
-  filter: contrast(96%); }
+  border: 1px solid transparent;
+  border-radius: 50%;
+  filter: contrast(98%); }
 
 .svg-box {
   text-align: center;
@@ -724,8 +755,6 @@ svg {
   width: 100%;
   list-style: none;
   margin: 0 auto; }
-  .svg-box span {
-    padding: .2em; }
 
 .overlay-box {
   background-color: #ffffff;
@@ -1059,7 +1088,8 @@ i:after {
   .fa-envelope-o {
     font-size: .03em;
     display: none; }
-  h1:before {
+  bl
+h1:before {
     display: none; }
   header {
     background: contain;
