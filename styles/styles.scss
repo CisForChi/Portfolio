@@ -111,6 +111,7 @@ a:hover {
 .blog-posts {
 	margin: 0 auto;
 	
+
 	text-align: center;
 	h2 {
 
@@ -119,19 +120,19 @@ a:hover {
 	
 }
 .wrapper-four {
-	width: 85%;
-	padding: 4em;
+	width: 95%;
+	padding: 2em;
 
 	margin-top: 2em;
 	margin: 0 auto;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: row;
-	flex-direction: row;
+	display:flex;
+	
+	flex-direction: column;
 }
 .blog {
 	border: 1px solid transparent;
 	color: #121212;
+
 	font-size: 2.1rem;
 	font-family: $jose;
 	line-height: 1.333;
@@ -146,8 +147,7 @@ a:hover {
 .box-three {
 	border: 1px solid transparent;
 
-	width: 30%;
-	padding: 10px 15px;
+	padding: 4em;
 	margin: 0 auto;
 	.title-box {
 		font-size: 1rem;
@@ -155,7 +155,7 @@ a:hover {
 		font-size: 1.5rem;
 		/* Approximation due to font substitution */
 		font-weight: 700;
-		line-height: 2.182;
+		line-height: 1.182;
 		/* Approximation due to font substitution */
 		text-align: left;
 	}
@@ -165,23 +165,23 @@ a:hover {
 		font-size: .9rem;
 		/* Approximation due to font substitution */
 		font-style: italic;
-		line-height: 1.5;
+		line-height: 1;
 		/* Approximation due to font substitution */
 		text-align: left;
 	}
 	h4 {
 		font-family: $jose;
-		font-size: 1.8rem;
+		font-size: 1.9rem;
 		/* Approximation due to font substitution */
 		font-weight: 600;
-		line-height: 3px;
+		line-height: 1px;
 		/* Approximation due to font substitution */
 		text-align: left;
 	}
 	a {
 		text-decoration: none;
 		color: #121212;
-		line-height:2;
+		line-height:1;
 	}
 }
 .description {
@@ -193,35 +193,15 @@ a:hover {
 	/* Approximation due to font substitution */
 	text-align: left;
 }
-.grey {
-	// background-color: #d7d7d7;
-	background: $lightgrey;
-	background-size: 50%;
-	height: auto;
-	padding: 25px;
-	margin: 25px;
-	background-color: #d7d7d7;
-	width: 25.9%;
-}
+
 .wrapper-5 {
-	padding: .7em;
+	padding: .4em;
 	width: 100%;
 	margin: 0 auto;
 	text-align: left;
 
 }
-.pre-contact {
-	margin: 0 auto;
-		height:50vh;
-	text-align: center;
-	h2 {
-		text-align: center;
-		font-size: 2.8rem;
-	}
-	h2:after {
-		content: "	—";
-		
-	}
+
 	h3 {
 		font-family: $jose;
 		color: #121212;
@@ -232,12 +212,10 @@ a:hover {
 		/* Approximation due to font substitution */
 		text-align: center;
 	}
-	h3:after {
-		content: "	—";
-	}
+
 	a {
 		font-family: $jose;
-	}
+
 	color: #121212;
 	font-size: 0.875rem;
 	/* Approximation due to font substitution */
