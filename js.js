@@ -1,3 +1,18 @@
+      
+  
+
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+      pagination: '.swiper-pagination',
+        paginationClickable: true,
+  
+     nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+  
+  });        
+
  $(function() {
       
       $(document).ready(function(){
@@ -84,13 +99,7 @@ function scaleBannerVideoSize(element){
 
     });
 }
-$('#animate').mouseenter(function () {
-    $(this).velocity({scale:1.25}, {
-        delay: 500, duration: 1500
-    });
-});
 
- 
 
 $('.copyright').birdman(); 
 var birdmanConfigWords = {
@@ -120,7 +129,7 @@ $('#linesdemo').birdman(birdmanConfigLines);
     var config = new shinejs.Config({
       numSteps: 3,
       opacity: 1,
-      shadowRGB: new shinejs.Color(38, 38, 38)
+      shadowRGB: new shinejs.Color(0, 0, 0)
     });
 
     var shine = new shinejs.Shine(document.getElementById('my-shine-object'), config);
@@ -132,3 +141,4 @@ $('#linesdemo').birdman(birdmanConfigLines);
     }
 
     window.addEventListener('mousemove', handleMouseMove, false);
+

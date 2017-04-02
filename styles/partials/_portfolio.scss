@@ -2,206 +2,215 @@
 .portfolio-work{
 border:1px solid transparent;
 
-		padding:.2em;
+		padding:.7em;
 	
 }
 
 .wrapper-three {
-	width:100%;
-	text-align:center;
-	margin:0;
-	padding:0;
+	width:85%;
+margin:0 auto;
+text-align:center;
 	
-
+	 display: flex;
+   flex-direction: column;
+	
 }
 
 .port-text {
-
+strong {
+	color:darken($pastelPink, 10%);
+}
 
 h2 {
+padding-top:50px;
+margin-top:25px;
+margin:0;
 
-	font-size:2.8rem;
+	font-size:3.1rem;
 }
-h2:before {
+h2:after {
 	content:"	—";
 
 
 	
 	}
 
-	p {
-		font-size:1.8rem;
-		width:60%;
-		
-		margin:0 auto;
-	}
-}
-
-.port-links {
-	font-size:1em;
-	display:inline-flex;
-	flex-direction:row;
-
-ul {
-	padding:0;
-	margin:0;
-}
-	li {
-		list-style:none;
-		display:inline-block;
-		padding:5px;
-		text-transform:uppercase;
-	}
-	h4{
-		font-family:$jose;
-	color: $midnite;
-	font-size: 1rem;/* Approximation due to font substitution */
-	line-height:1.7;
-	text-transform: uppercase;
-	}
-	a {
-		text-decoration:none;
-		color:$midnite;
-		border:2px solid $pastelPink;
-		padding:.8em;
-	}
 	
-		strong::after {
-content:"	—";
-color:white;
-
-	padding:5px;
-	margin:0;
-	display: block;
-	line-height:0;
-	}
 }
+
+
+
+
+	
+
 .port-photos {
-	display:flex;
-	margin:2px;
-	padding:5px;
-	flex-direction:row;
-	flex-wrap:wrap;
+padding: 3vw;
+  
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap; 
+  flex-flow: row wrap; 
+  display: -webkit-box;
+  display: flex;
+
+text-align:left;
+margin: 0 auto;
+
 	
 
 	
 }
 .port-one, .port-two, .port-three, .port-four ,.port-five {
-	width:48.6%;
-	border:1px solid transparent;
-	margin:.09em;
-	padding:.2em;
-	 display: flex;
-   flex-direction: column;
 
+
+
+width:50%;
+
+
+margin:0 auto;
 
 	
 	
 }
 .port-code {
+	 -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto; 
+  width: 40%;
+  margin: 2vw;
 	a {
 		border:none;
 
 	}
-	.description {
-		width:50%;
-	}
-		.arrow {
-			max-height:45px;
-			max-width:45px;
+	.right-description , .description {
 		
+		color:$midnite;
 	}
+	ul {
+		list-style:none;
+		margin:0 auto;
+	}
+	li:before {
+		content:" -";
+		color:$pastelPink;
+	}	
 }
 
 .port-one {
 
 img {
-	height:auto;
-	width:auto;
-	max-height:400px;
-	max-width:600px;
+	 width: 100%; 
+  height: auto; 
 }
 
 
 }
 .port-two {
 img {
-		height:auto;
-	width:auto;
-	max-height:400px;
-	max-width:600px;
+	 width: 100%; 
+  height: auto; 
 }
 
 }
 .port-three {
 	img {
-	height:auto;
-	width:auto;
-	max-height:400px;
-	max-width:600px;
+	 width: 100%; 
+  height: auto; 
 	}
 }
 .port-four {
 img {
-		height:auto;
-	width:auto;
-	max-height:400px;
-	max-width:600px;
+		 width: 100%; 
+  height: auto; 
 }
 }
 
 .port-code {
 	
-padding-bottom:.4em;
-padding-left:.8em;
-margin-bottom:.2em;
-text-align:left;
-	 
-	 background-color: rgba(18, 18, 18, 0.85);
+	text-align:left;
+	width:40%;
+	
+	
+
+
+	
 h4 {
 	font-family:$jose;
-	color: white;
-	font-size: 1rem;/* Approximation due to font substitution */
-	line-height:1.0rem;
+
+	color: $midnite;
+	font-size: 1.5rem;/* Approximation due to font substitution */
+	line-height:1.4em;
+	border-bottom:1px solid $pastelPink;
 	text-transform: uppercase;
 
 	}
 
 	a{
 		text-decoration:none;
-		color:white;
-		border:2px solid $pastelPink;
-		padding:.8em;
+		color:$midnite;
+		
+		text-align:left;
+		margin:0 auto;
+	
+		
+		justify-content:center;
+		 
+
+		
+		padding:.3em;
+	}
+	a:first-child {
+		font-size:1.5em;
+		letter-spacing:.3em;
+		
+	}
+	a:before{
+		content:"   -";
+		color:$pastelPink;
+	}
+	a:hover, a:focus {
+color:$pastelPink;
+border-bottom:1px solid $pastelPink;
+	}
+	
+	.github {
+		
+		font-size:.9em;
+		margin:0 auto;
+		padding:2em;
+		display:flex;
+	
+		
+		
 	}
 	
 	strong::after {
 
-color:white;
-
-	padding:.7rem;
-	margin:0;
-	
+color:$midnite;
+margin:0;
 	line-height:0;
 	}
 
-	.description{
-		font-family:$crim;
-		color: #ababab;
-text-transform:lowercase;
-font-size: .9rem; /* Approximation due to font substitution */
-line-height: .07em; /* Approximation due to font substitution */
-padding-bottom:1em;
-text-align: left;
-	}
-	.arrow {
+ .description{
+	font-family:$crim;
+	color: $midnite;
+	padding:25px;
+
+
+	 
+	text-transform:lowercase;
+	font-size: 1.5rem; /* Approximation due to font substitution */
+
+
 
 	
-	height: auto;
-	width:auto;
-	max-height:20px;
-	max-width:20px;
-}
+	
 	}
+}
+h4.right {
+	text-align:right;
+}
 
 
 
