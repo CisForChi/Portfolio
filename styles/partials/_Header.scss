@@ -1,25 +1,40 @@
 h1 {
-	font-size: 5.5em;
-	padding-top: 1em;
-	height: 1.9%;
-
+	font-size: 3.9em;
+	padding-top: .8em;
 	text-align: left;
 }
-h1:before {
-	content: "—"
-}
+
 header {
 	padding: 15px;
 	background: url('/assets/background.png');
 	height: 100vh;
 	background-repeat: no-repeat;
+
 }
 .wrapper_head {
 	width: 80%;
 	position: relative;
 	display: flex;
-	justify-content: flex-start;
-	padding: 10px;
+	flex-direction:column;
+
+	
+}
+.left_head{
+	width:50%;
+	
+		transform:translateY(-25%);
+	
+
+}
+.right_head{
+width:50%;
+margin-top:-.1rem;
+
+margin-left: auto;
+transform: translateX(65%);
+
+
+
 }
 nav {
 	color: #121212;
@@ -27,10 +42,11 @@ nav {
 	/* Approximation due to font substitution */
 	font-weight: 700;
 	line-height: 24px;
-	display:flex;
-	flex-direction:row;
-	justify-content:flex-end;
+
+
+	
 	position: relative;
+
 	p {
 		width: 3.1%;
 		height: 0.9%;
@@ -46,10 +62,15 @@ nav {
 		cursor: crosshair;
 	}
 }
+
 .navBar {
-	display: flex;
+	
+	
+	
+display: flex;
 	flex-direction: row;
 	list-style: none;
+	justify-content:flex-end;
 	padding: 5px;
 	font-size: 1.2em;
 	ul {
@@ -57,12 +78,42 @@ nav {
 	}
 	li {
 		padding: .2em;
+		justify-content:flex-end;
+	}
+
+}
+.svg-icon {
+  width: 2em;
+  height: 2em;
+}
+
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: $midnite;
+
+}
+
+
+.right {
+	justify-content:flex-end;
+	margin:0;
+	padding:0;
+
+	li:last-class {
+		display:none;
+
+
+	}
+	.li:last-class:hover{
+		display:block;
 	}
 }
 .downBtn {
 	text-align: center;
 	margin: 0 auto;
 	position: absolute;
-	top: 70%;
+	top: 92%;
 	right: 50%;
 }

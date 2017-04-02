@@ -106,16 +106,14 @@ h3::after{
   color:  #121212;
   font-size: 2.2rem;/* Approximation due to font substitution */
   font-weight: 600;
-  line-height:.9em;/* Approximation due to font substitution */
+  line-height:1em;/* Approximation due to font substitution */
   text-align: left;
 }
-  h2:after {
-		content:"—"
-	}
+
     p{
-	font-size:1.8em;
+	font-size:1.3em;
 	color:darken($midnite, 58%);
-  line-height:1.5em;
+  line-height:1.2em;
 	text-align:left;
   padding:.2em;
 	margin:0 auto;
@@ -126,10 +124,24 @@ h3::after{
   margin:0 auto;
   display:inline-flex;
   position:relative;
+
 }
 .box-box1{
-	width:30%;
-	margin:0 auto;
+padding:2.8em 5.2em;
+	width:50%;
+	
+  
+  
+
+ p{
+    font-size:1.8em;
+
+    line-height:1.4;
+    width:100%;
+    margin:0 auto;
+    text-align:center;
+    
+ }
 em {
   border-bottom:2px solid $pastelPink;
 
@@ -137,7 +149,7 @@ em {
 }
 .box-box2 {
 	background:url('/assets/me.JPG');
-  opacity:.8;
+  opacity:.3;
   z-index:1;
   width:56.5%;
   background-attachment: fixed;
@@ -147,6 +159,15 @@ em {
   img {
   display:none;
   }
+}
+
+.box-svg {
+  padding:4em;
+  margin:0 auto;
+
+  width:100%;
+
+
 }
 
 .video-container{
