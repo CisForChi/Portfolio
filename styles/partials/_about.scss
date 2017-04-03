@@ -130,13 +130,27 @@ h3::after{
 padding:2.8em 5.2em;
 	width:50%;
    height:100vh;
-
+display:flex;
+flex-direction:column;
+justify-content: space-between;
 	
   
   
-
+p:before {
+  
+       content: '';
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        height: 20px;
+        width: 20px;
+        border-top: 5px solid $midnite;
+        border-left: 5px solid $midnite;
+}
+}
  p{
     font-size:1.5em;
+
 padding-top:1.2em;
 padding-bottom:1.2em;
     line-height:1.2;
@@ -154,7 +168,7 @@ em {
   border-bottom:2px solid $pastelPink;
 
 }
-}
+
 .box-box2 {
 	background:url('/assets/me.JPG');
   opacity:.6;
@@ -180,16 +194,7 @@ text-align:left;
 
 
 }
-.box-svg:before {
-       content: '';
-        position: absolute;
-        top: -20px;
-        left: -20px;
-        height: 20px;
-        width: 20px;
-        border-top: 5px solid $midnite;
-        border-left: 5px solid $midnite;
-}
+
 .box-svg:after {
       content: '';
         position: absolute;
@@ -201,8 +206,10 @@ text-align:left;
         border-right: 5px solid $midnite;
 }
 .box-contain {
+
   position:relative;
-  padding-top:1rem;
+  padding-top:3rem;
+  margin-top:3rem;
   width:100%; justify-content:flex-end;
 
 border-radius:2%;

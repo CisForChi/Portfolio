@@ -337,18 +337,35 @@ h3::after {
 .box-box1 {
   padding: 2.8em 5.2em;
   width: 50%;
-  height: 100vh; }
-  .box-box1 p {
-    font-size: 1.5em;
-    padding-top: 1.2em;
-    padding-bottom: 1.2em;
-    line-height: 1.2;
-    width: 100%;
-    font-family: "Josefin Sans", sans-serif;
-    margin: 0 auto;
-    text-align: left; }
-  .box-box1 em {
-    border-bottom: 2px solid #F2DCDC; }
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .box-box1 p:before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    height: 20px;
+    width: 20px;
+    border-top: 5px solid #262626;
+    border-left: 5px solid #262626; }
+
+p {
+  font-size: 1.5em;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  line-height: 1.2;
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0 auto;
+  text-align: left; }
+
+em {
+  border-bottom: 2px solid #F2DCDC; }
 
 .box-box2 {
   background: url("/assets/me.JPG");
@@ -366,16 +383,6 @@ h3::after {
   width: 100%;
   text-align: left; }
 
-.box-svg:before {
-  content: '';
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  height: 20px;
-  width: 20px;
-  border-top: 5px solid #262626;
-  border-left: 5px solid #262626; }
-
 .box-svg:after {
   content: '';
   position: absolute;
@@ -388,7 +395,8 @@ h3::after {
 
 .box-contain {
   position: relative;
-  padding-top: 1rem;
+  padding-top: 3rem;
+  margin-top: 3rem;
   width: 100%;
   -ms-flex-pack: end;
       justify-content: flex-end;
@@ -425,130 +433,6 @@ h3::after {
 .touch .video-container .poster {
   display: block !important; }
 
-.portfolio-work {
-  border: 1px solid transparent;
-  padding: .7em; }
-
-.wrapper-three {
-  width: 85%;
-  margin: 0 auto;
-  text-align: center;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-.port-text strong {
-  color: #e4b7b7; }
-
-.port-text h2 {
-  padding-top: 50px;
-  margin-top: 25px;
-  margin: 0;
-  font-size: 3.1rem; }
-
-.port-text h2:after {
-  content: "	—"; }
-
-.port-photos {
-  padding: 3vw;
-  display: -ms-flexbox;
-  -ms-flex-wrap: wrap;
-  -ms-flex-direction: column;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
-  display: flex;
-  text-align: left;
-  margin: 0 auto; }
-
-.port-one, .port-two, .port-three, .port-four, .port-five {
-  width: 50%;
-  margin: 0 auto; }
-
-.port-code {
-  -ms-flex: auto;
-  flex: auto;
-  width: 40%;
-  margin: 2vw; }
-  .port-code a {
-    border: none; }
-  .port-code .right-description, .port-code .description {
-    color: #262626; }
-  .port-code ul {
-    list-style: none;
-    margin: 0 auto; }
-  .port-code li:before {
-    content: " -";
-    color: #F2DCDC; }
-
-.port-one img {
-  width: 100%;
-  height: auto; }
-
-.port-two img {
-  width: 100%;
-  height: auto; }
-
-.port-three img {
-  width: 100%;
-  height: auto; }
-
-.port-four img {
-  width: 100%;
-  height: auto; }
-
-.port-code {
-  text-align: left;
-  width: 40%; }
-  .port-code h4 {
-    font-family: "Josefin Sans", sans-serif;
-    color: #262626;
-    font-size: 1.5rem;
-    /* Approximation due to font substitution */
-    line-height: 1.4em;
-    border-bottom: 1px solid #F2DCDC;
-    text-transform: uppercase; }
-  .port-code a {
-    text-decoration: none;
-    color: #262626;
-    text-align: left;
-    margin: 0 auto;
-    -ms-flex-pack: center;
-        justify-content: center;
-    padding: .3em; }
-  .port-code a:first-child {
-    font-size: 1.5em;
-    letter-spacing: .3em; }
-  .port-code a:before {
-    content: "   -";
-    color: #F2DCDC; }
-  .port-code a:hover, .port-code a:focus {
-    color: #F2DCDC;
-    border-bottom: 1px solid #F2DCDC; }
-  .port-code .github {
-    font-size: .9em;
-    margin: 0 auto;
-    padding: 2em;
-    display: -ms-flexbox;
-    display: flex; }
-  .port-code strong::after {
-    color: #262626;
-    margin: 0;
-    line-height: 0; }
-  .port-code .description {
-    font-family: "Crimson Text", serif;
-    color: #262626;
-    padding: 25px;
-    text-transform: lowercase;
-    font-size: 1.5rem;
-    /* Approximation due to font substitution */ }
-
-h4.right {
-  text-align: right; }
-
-main {
-  padding: .5em; }
-
 body {
   margin: 0 auto;
   min-height: 100%;
@@ -574,7 +458,8 @@ h2 {
   width: 100%; }
   .swiper-container a {
     color: #262626;
-    padding: .3em; }
+    padding: .1em;
+    text-align: left; }
 
 .swiper-slide {
   margin: 0 auto;
@@ -592,24 +477,34 @@ h2 {
 .swiper-box {
   display: -ms-flexbox;
   display: flex;
+  font-size: 1em;
   width: 45%;
   text-align: left;
   padding-left: 1em;
   -ms-flex-direction: column;
       flex-direction: column; }
   .swiper-box h3 {
-    font-size: 2rem; }
+    font-size: 3rem; }
   .swiper-box p {
     font-size: 1rem;
     line-height: 1.2em;
-    padding: .5em;
+    padding: .1em;
     margin: 0 auto; }
   .swiper-box li {
     list-style: none;
     font-size: .9em;
-    margin-left: -2em; }
+    text-align: center;
+    margin: 0 auto;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
+    .swiper-box li .fa {
+      display: -ms-flexbox;
+      display: flex; }
     .swiper-box li a {
-      color: #262626; }
+      color: #262626;
+      font-weight: 700; }
+    .swiper-box li a:focus {
+      color: #F2DCDC; }
 
 a:hover {
   cursor: crosshair; }

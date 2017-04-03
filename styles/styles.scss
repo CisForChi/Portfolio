@@ -37,7 +37,8 @@ h2 {
       
        a {
        	color:$midnite;
-       	padding:.3em;
+       	padding:.1em;
+        text-align:left;
 
 
        }
@@ -65,7 +66,7 @@ h2 {
 .swiper-box {
 	display:flex;
 
-
+font-size:1em;
 
 	width:45%;
 	text-align:left;
@@ -74,7 +75,7 @@ h2 {
 	flex-direction:column;
 
  h3 {
-        	font-size:2rem;
+        	font-size:3rem;
 
         
 
@@ -82,7 +83,7 @@ h2 {
         p {
         		font-size:1rem;
         		line-height:1.2em;
-        		padding:.5em;
+        		padding:.1em;
         		margin:0 auto;
         		
         	}
@@ -90,15 +91,26 @@ h2 {
         	li {
         		list-style:none;
       		font-size:.9em;
-      		margin-left:-2em;
+      	text-align:center;
+        margin:0 auto;
+        display:inline-flex;
+
+        .fa {
+          display:flex;
+        }
         		
 
 
 
         		a {
         			color:$midnite;
+              font-weight:700;
+
 
         		}
+            a:focus {
+              color:$pastelPink;
+            }
         	}
 }
 
