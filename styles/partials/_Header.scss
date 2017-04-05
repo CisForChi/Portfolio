@@ -3,50 +3,54 @@ h1 {
 	padding-top: .8em;
 	text-align: left;
 }
+.header__bg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 80%;
+	background-color: #EAE1DF;
 
+	transform: skewY(-10deg);
+	transform-origin: top left;
+}
 header {
-	padding: 15px;
-	background: url('/assets/background.png');
+	position: relative;
+	background: url('/4.jpg');
+	background-size: cover;
+	background-attachment: fixed;
 	height: 100vh;
 	background-repeat: no-repeat;
-
+	h1 {
+		position: relative;
+		z-index: 101;
+		color: #43483B;
+		padding: 1em;
+		margin: 0;
+		text-align: center;
+	}
 }
 .wrapper_head {
 	width: 80%;
 	position: relative;
 	display: flex;
-	flex-direction:column;
-
-	
-}
-.left_head{
-	width:50%;
-	
-		transform:translateY(-25%);
-	
-
-}
-.right_head{
-width:50%;
-margin-top:-.1rem;
-
-margin-left: auto;
-transform: translateX(65%);
-
-
-
+	flex-direction: column;
 }
 nav {
-	color: #121212;
+	margin: 0;
+	color: #43483B;
+	z-index: 103;
+	padding-top: 1em;
+	margin-right: 1.3em;
 	font-size: .9em;
 	/* Approximation due to font substitution */
 	font-weight: 700;
 	line-height: 24px;
-
-
-	
+	z-index: 99;
 	position: relative;
-
 	p {
 		width: 3.1%;
 		height: 0.9%;
@@ -55,65 +59,32 @@ nav {
 	a {
 		text-decoration: none;
 		padding: 5px;
-		color: #121212;
+		font-size: 1.1em;
+		color: #43483B;
 	}
 	a:hover {
-		border-bottom: 4px solid $midnite;
+		border-bottom: 4px solid #DCBE9A;
 		cursor: crosshair;
 	}
 }
-
 .navBar {
-	
-	
-	
-display: flex;
+	color: #43483B;
+	z-index: 102;
+	display: flex;
 	flex-direction: row;
 	list-style: none;
-	justify-content:flex-end;
-	padding: 5px;
+	justify-content: flex-end;
 	font-size: 1.2em;
 	ul {
 		padding: 1.3em;
 	}
 	li {
+		color: #43483B;
 		padding: .2em;
-		justify-content:flex-end;
+		justify-content: flex-end;
 	}
-
 }
 .svg-icon {
-  width: 2em;
-  height: 2em;
-}
-
-
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
-  fill: $midnite;
-
-}
-
-
-.right {
-	justify-content:flex-end;
-	margin:0;
-	padding:0;
-
-	li:last-class {
-		display:none;
-
-
-	}
-	.li:last-class:hover{
-		display:block;
-	}
-}
-.downBtn {
-	text-align: center;
-	margin: 0 auto;
-	position: absolute;
-	top: 92%;
-	right: 50%;
+	width: 2em;
+	height: 2em;
 }
